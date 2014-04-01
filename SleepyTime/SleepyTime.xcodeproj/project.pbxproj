@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6564A2B818EB13E9004038FF /* STTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A2B718EB13E9004038FF /* STTimeController.m */; };
 		65F2022818EAF6CA007D42B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022718EAF6CA007D42B3 /* Foundation.framework */; };
 		65F2022A18EAF6CA007D42B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022918EAF6CA007D42B3 /* CoreGraphics.framework */; };
 		65F2022C18EAF6CA007D42B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022B18EAF6CA007D42B3 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6564A2B618EB13E9004038FF /* STTimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTimeController.h; sourceTree = "<group>"; };
+		6564A2B718EB13E9004038FF /* STTimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTimeController.m; sourceTree = "<group>"; };
 		65F2022418EAF6CA007D42B3 /* SleepyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F2022718EAF6CA007D42B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65F2022918EAF6CA007D42B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 				65F2023618EAF6CA007D42B3 /* STAppDelegate.h */,
 				65F2023718EAF6CA007D42B3 /* STAppDelegate.m */,
 				65F2023918EAF6CA007D42B3 /* Main.storyboard */,
+				6564A2B618EB13E9004038FF /* STTimeController.h */,
+				6564A2B718EB13E9004038FF /* STTimeController.m */,
 				65F2023C18EAF6CA007D42B3 /* STViewController.h */,
 				65F2023D18EAF6CA007D42B3 /* STViewController.m */,
 				65F2023F18EAF6CA007D42B3 /* Images.xcassets */,
@@ -253,6 +258,7 @@
 				65F2023E18EAF6CA007D42B3 /* STViewController.m in Sources */,
 				65F2023418EAF6CA007D42B3 /* main.m in Sources */,
 				65F2023818EAF6CA007D42B3 /* STAppDelegate.m in Sources */,
+				6564A2B818EB13E9004038FF /* STTimeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +463,7 @@
 				65F2025818EAF6CB007D42B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65F2025918EAF6CB007D42B3 /* Build configuration list for PBXNativeTarget "SleepyTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				65F2025B18EAF6CB007D42B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
