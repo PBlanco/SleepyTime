@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface STCustomTVC : UIViewController
-
+@property (nonatomic, strong) NSArray *timesArray;
 @end

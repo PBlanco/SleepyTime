@@ -61,16 +61,24 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
 -(NSString *)getStringForTime:(NSDate *)date
 {
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-    [timeFormatter setDateFormat:@"hh:mm ha"];
+    [timeFormatter setDateFormat:@"hh:mm a"];
     NSString *time = [timeFormatter stringFromDate:date];
     return time;
 }
 
 -(NSString *)getStringHourForStartTime:(NSDate *)startDate toEndtime:(NSDate *)endDate {
-    NSTimeInterval distanceBetweenDates = [startDate timeIntervalSinceDate:endDate];
+    NSTimeInterval distanceBetweenDates = [endDate timeIntervalSinceDate:startDate];
     double secondsInAnHour = 3600; // (60sec * 60mins)
-    NSInteger hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
-    return [NSString stringWithFormat:@"%i hs",hoursBetweenDates];
+    double minutesInAnHour = 60;
+    
+    double hoursDoubleBetweenDates = distanceBetweenDates / secondsInAnHour;
+    NSInteger hoursBetweenDates = floor(distanceBetweenDates / secondsInAnHour);
+    
+    double minutesLeftBetweenDates = hoursDoubleBetweenDates - hoursBetweenDates;
+    
+    NSInteger minutes = minutesLeftBetweenDates*minutesInAnHour;
+    
+    return [NSString stringWithFormat:@"%i%@ %i%@",hoursBetweenDates,@"h",minutes, @"m"];
 }
 
 

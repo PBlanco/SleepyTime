@@ -12,7 +12,7 @@
 
 
 @interface STViewController ()
-
+@property (nonatomic, strong)STTimeController *timeController;
 @end
 
 @implementation STViewController
@@ -20,7 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    self.timeController = [[STTimeController alloc]init];
 }
 
 
@@ -28,6 +29,7 @@
 {
     if ([segue.identifier isEqualToString:@"sleepNow"]) {
         STCustomTVC *destViewController = segue.destinationViewController;
+        destViewController.timesArray = [self.timeController getWakeupTimesFor:[NSDate date]];
     }
 }
 
