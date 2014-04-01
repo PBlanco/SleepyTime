@@ -7,6 +7,9 @@
 //
 
 #import "STViewController.h"
+#import "STTimeController.h"
+#import "STCustomTVC.h"
+
 
 @interface STViewController ()
 
@@ -20,10 +23,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if ([segue.identifier isEqualToString:@"sleepNow"]) {
+        STCustomTVC *destViewController = segue.destinationViewController;
+    }
 }
 
 @end

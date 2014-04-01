@@ -10,4 +10,7 @@
 
 @interface STTimeController : NSObject
 
+- (NSArray *)getWakeupTimesFor:(NSDate *)date;
+- (NSArray *)getSleepTimesFor:(NSDate *)date;
+
 @end

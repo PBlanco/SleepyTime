@@ -31,7 +31,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Iei-wr-yaA" kind="modal" id="Qmw-XB-apf"/>
+                                    <segue destination="Iei-wr-yaA" kind="modal" identifier="sleepNow" id="Qmw-XB-apf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-BH-omd">
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="521" y="-107"/>
         </scene>
-        <!--View Controller - SleepyTime-->
+        <!--CustomTVC - SleepyTime-->
         <scene sceneID="yik-EN-xt5">
             <objects>
-                <viewController id="SAh-8k-UvW" sceneMemberID="viewController">
+                <viewController id="SAh-8k-UvW" customClass="STCustomTVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xDv-9L-1xF"/>
                         <viewControllerLayoutGuide type="bottom" id="Ec5-L6-8dO"/>
@@ -93,6 +93,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="SleepyTime" id="mKM-B5-RTR"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="doz-Qs-r6t" id="WZ6-z7-aV3"/>
+                        <outlet property="tableView" destination="Qqb-pL-hAD" id="lwo-hc-80V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bto-do-AoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
