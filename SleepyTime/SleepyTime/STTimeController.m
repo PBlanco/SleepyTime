@@ -71,11 +71,12 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
     double secondsInAnHour = 3600; // (60sec * 60mins)
     double minutesInAnHour = 60;
     
+    //calculate hours
     double hoursDoubleBetweenDates = distanceBetweenDates / secondsInAnHour;
     NSInteger hoursBetweenDates = floor(distanceBetweenDates / secondsInAnHour);
     
+    //cacluate minutes by using remainder of hours floored
     double minutesLeftBetweenDates = hoursDoubleBetweenDates - hoursBetweenDates;
-    
     NSInteger minutes = minutesLeftBetweenDates*minutesInAnHour;
     
     return [NSString stringWithFormat:@"%i%@ %i%@",hoursBetweenDates,@"h",minutes, @"m"];

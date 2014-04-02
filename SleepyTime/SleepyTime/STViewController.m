@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    [self.navigationController setNavigationBarHidden:YES];
     self.timeController = [[STTimeController alloc]init];
 }
 
@@ -29,6 +29,7 @@
 {
     if ([segue.identifier isEqualToString:@"sleepNow"]) {
         STCustomTVC *destViewController = segue.destinationViewController;
+        [destViewController.navigationController setNavigationBarHidden:NO];
         destViewController.timesArray = [self.timeController getWakeupTimesFor:[NSDate date]];
     }
 }

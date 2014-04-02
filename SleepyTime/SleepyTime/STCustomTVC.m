@@ -8,6 +8,7 @@
 
 #import "STCustomTVC.h"
 #import "STTimeModel.h"
+#import "STTimeCell.h"
 
 @interface STCustomTVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -31,25 +32,33 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    self.tableView.tableFooterView = view;
 }
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.timesArray.count;
 }
 
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *MyIdentifier = @"MyReuseIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    static NSString *MyIdentifier = @"timeCell";
+    STTimeCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:MyIdentifier];
+        cell = [[STTimeCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:MyIdentifier];
     }
+    
+    STTimeModel *timeObject = [self.timesArray objectAtIndex:[indexPath row]];
+
+    [cell.timeLabel setText:timeObject.time];
+    [cell.hoursLabel setText:timeObject.hoursOfSleep];
+    [cell colorForIndex:[indexPath row]];
+    
     return cell;
 }
 
