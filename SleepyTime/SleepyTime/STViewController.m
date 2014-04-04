@@ -26,8 +26,8 @@
     self.timeController = [[STTimeController alloc]init];
     
     //Set custom font
-    [self.titleLabel1 setFont:[UIFont fontWithName:@"PTSerif-Italic" size:40]];
-    [self.titleLabel2 setFont:[UIFont fontWithName:@"PTSerif-Italic" size:40]];
+    [self.titleLabel1 setFont:[UIFont fontWithName:@"PTRegularItalic" size:42]];
+    [self.titleLabel2 setFont:[UIFont fontWithName:@"PTRegularItalic" size:42]];
     
 }
 

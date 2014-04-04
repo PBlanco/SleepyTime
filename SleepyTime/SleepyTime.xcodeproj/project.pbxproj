@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6525904218EBA6C50071B0DC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6525903D18EBA6C50071B0DC /* OFL.txt */; };
-		6525904318EBA6C50071B0DC /* PT_Serif-Web-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6525903E18EBA6C50071B0DC /* PT_Serif-Web-Bold.ttf */; };
-		6525904418EBA6C50071B0DC /* PT_Serif-Web-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6525903F18EBA6C50071B0DC /* PT_Serif-Web-BoldItalic.ttf */; };
-		6525904518EBA6C50071B0DC /* PT_Serif-Web-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6525904018EBA6C50071B0DC /* PT_Serif-Web-Italic.ttf */; };
-		6525904618EBA6C50071B0DC /* PT_Serif-Web-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6525904118EBA6C50071B0DC /* PT_Serif-Web-Regular.ttf */; };
 		6564A2B818EB13E9004038FF /* STTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A2B718EB13E9004038FF /* STTimeController.m */; };
 		6564A2BB18EB1C7A004038FF /* STCustomTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A2BA18EB1C7A004038FF /* STCustomTVC.m */; };
 		6564A2BE18EB1E9D004038FF /* STTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A2BD18EB1E9D004038FF /* STTimeModel.m */; };
@@ -30,6 +25,10 @@
 		65F2024918EAF6CA007D42B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022B18EAF6CA007D42B3 /* UIKit.framework */; };
 		65F2025118EAF6CA007D42B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F2024F18EAF6CA007D42B3 /* InfoPlist.strings */; };
 		65F2025318EAF6CA007D42B3 /* SleepyTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F2025218EAF6CA007D42B3 /* SleepyTimeTests.m */; };
+		65FCA98D18EF586500B63B04 /* PTRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98918EF586500B63B04 /* PTRegular.ttf */; };
+		65FCA98E18EF586500B63B04 /* PTRegularBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98A18EF586500B63B04 /* PTRegularBold.ttf */; };
+		65FCA98F18EF586500B63B04 /* PTRegularBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98B18EF586500B63B04 /* PTRegularBoldItalic.ttf */; };
+		65FCA99018EF586500B63B04 /* PTRegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98C18EF586500B63B04 /* PTRegularItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6525903D18EBA6C50071B0DC /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
-		6525903E18EBA6C50071B0DC /* PT_Serif-Web-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT_Serif-Web-Bold.ttf"; sourceTree = "<group>"; };
-		6525903F18EBA6C50071B0DC /* PT_Serif-Web-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT_Serif-Web-BoldItalic.ttf"; sourceTree = "<group>"; };
-		6525904018EBA6C50071B0DC /* PT_Serif-Web-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT_Serif-Web-Italic.ttf"; sourceTree = "<group>"; };
-		6525904118EBA6C50071B0DC /* PT_Serif-Web-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT_Serif-Web-Regular.ttf"; sourceTree = "<group>"; };
 		6564A2B618EB13E9004038FF /* STTimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTimeController.h; sourceTree = "<group>"; };
 		6564A2B718EB13E9004038FF /* STTimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTimeController.m; sourceTree = "<group>"; };
 		6564A2B918EB1C7A004038FF /* STCustomTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCustomTVC.h; sourceTree = "<group>"; };
@@ -75,6 +69,10 @@
 		65F2024E18EAF6CA007D42B3 /* SleepyTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SleepyTimeTests-Info.plist"; sourceTree = "<group>"; };
 		65F2025018EAF6CA007D42B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65F2025218EAF6CA007D42B3 /* SleepyTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepyTimeTests.m; sourceTree = "<group>"; };
+		65FCA98918EF586500B63B04 /* PTRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegular.ttf; sourceTree = "<group>"; };
+		65FCA98A18EF586500B63B04 /* PTRegularBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegularBold.ttf; sourceTree = "<group>"; };
+		65FCA98B18EF586500B63B04 /* PTRegularBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegularBoldItalic.ttf; sourceTree = "<group>"; };
+		65FCA98C18EF586500B63B04 /* PTRegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegularItalic.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,18 +99,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6525903C18EBA6C50071B0DC /* PT Serif */ = {
-			isa = PBXGroup;
-			children = (
-				6525903D18EBA6C50071B0DC /* OFL.txt */,
-				6525903E18EBA6C50071B0DC /* PT_Serif-Web-Bold.ttf */,
-				6525903F18EBA6C50071B0DC /* PT_Serif-Web-BoldItalic.ttf */,
-				6525904018EBA6C50071B0DC /* PT_Serif-Web-Italic.ttf */,
-				6525904118EBA6C50071B0DC /* PT_Serif-Web-Regular.ttf */,
-			);
-			path = "PT Serif";
-			sourceTree = "<group>";
-		};
 		6564A2BF18EB1EB1004038FF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +176,7 @@
 		65F2022E18EAF6CA007D42B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6525903C18EBA6C50071B0DC /* PT Serif */,
+				65FCA99118EF586A00B63B04 /* PT Sans */,
 				65F2023618EAF6CA007D42B3 /* STAppDelegate.h */,
 				65F2023718EAF6CA007D42B3 /* STAppDelegate.m */,
 				65F2022F18EAF6CA007D42B3 /* SleepyTime-Info.plist */,
@@ -217,6 +203,17 @@
 				65F2024F18EAF6CA007D42B3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65FCA99118EF586A00B63B04 /* PT Sans */ = {
+			isa = PBXGroup;
+			children = (
+				65FCA98918EF586500B63B04 /* PTRegular.ttf */,
+				65FCA98A18EF586500B63B04 /* PTRegularBold.ttf */,
+				65FCA98B18EF586500B63B04 /* PTRegularBoldItalic.ttf */,
+				65FCA98C18EF586500B63B04 /* PTRegularItalic.ttf */,
+			);
+			name = "PT Sans";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,13 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F2024018EAF6CA007D42B3 /* Images.xcassets in Resources */,
+				65FCA98E18EF586500B63B04 /* PTRegularBold.ttf in Resources */,
+				65FCA98F18EF586500B63B04 /* PTRegularBoldItalic.ttf in Resources */,
 				65F2023218EAF6CA007D42B3 /* InfoPlist.strings in Resources */,
-				6525904618EBA6C50071B0DC /* PT_Serif-Web-Regular.ttf in Resources */,
-				6525904418EBA6C50071B0DC /* PT_Serif-Web-BoldItalic.ttf in Resources */,
-				6525904218EBA6C50071B0DC /* OFL.txt in Resources */,
-				6525904318EBA6C50071B0DC /* PT_Serif-Web-Bold.ttf in Resources */,
-				6525904518EBA6C50071B0DC /* PT_Serif-Web-Italic.ttf in Resources */,
 				65F2023B18EAF6CA007D42B3 /* Main.storyboard in Resources */,
+				65FCA98D18EF586500B63B04 /* PTRegular.ttf in Resources */,
+				65FCA99018EF586500B63B04 /* PTRegularItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

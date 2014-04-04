@@ -4,9 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>PT_Serif-Web-Italic.ttf</string>
-		<string>PT_Serif-Web-Bold.ttf</string>
-		<string>PT_Serif-Web-Regular.ttf</string>
+		<string>PTRegular.ttf</string>
+		<string>PTRegularBold.ttf</string>
+		<string>PTRegularBoldItalic.ttf</string>
+		<string>PTRegularItalic.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
