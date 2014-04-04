@@ -13,6 +13,7 @@
 @interface STCustomTVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
 @end
 
@@ -34,6 +35,7 @@
     // Do any additional setup after loading the view.
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.tableView.tableFooterView = view;
+    self.navigationController.title = @"SleepyTime";
 }
 
 

@@ -12,6 +12,8 @@
 
 
 @interface STViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel2;
 @property (nonatomic, strong)STTimeController *timeController;
 @end
 
@@ -20,8 +22,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:YES];
+//    [self.navigationController setNavigationBarHidden:YES];
     self.timeController = [[STTimeController alloc]init];
+    
+    //Set custom font
+    [self.titleLabel1 setFont:[UIFont fontWithName:@"PTSerif-Italic" size:40]];
+    [self.titleLabel2 setFont:[UIFont fontWithName:@"PTSerif-Italic" size:40]];
+    
 }
 
 
