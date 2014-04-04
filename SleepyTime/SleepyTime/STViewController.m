@@ -9,12 +9,16 @@
 #import "STViewController.h"
 #import "STTimeController.h"
 #import "STCustomTVC.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @interface STViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel2;
+@property (weak, nonatomic) IBOutlet UIButton *sleepNowButton;
+@property (weak, nonatomic) IBOutlet UIButton *wakeUpAtButton;
 @property (nonatomic, strong)STTimeController *timeController;
+- (void)setButtonFrame:(UIButton *)button;
 @end
 
 @implementation STViewController
@@ -26,9 +30,19 @@
     self.timeController = [[STTimeController alloc]init];
     
     //Set custom font
-    [self.titleLabel1 setFont:[UIFont fontWithName:@"PTRegularItalic" size:42]];
-    [self.titleLabel2 setFont:[UIFont fontWithName:@"PTRegularItalic" size:42]];
+    [self.titleLabel1 setFont:[UIFont fontWithName:@"PTSans-Italic" size:42]];
+    [self.titleLabel2 setFont:[UIFont fontWithName:@"PTSans-Italic" size:42]];
     
+    //setup buttons
+    [self setButtonFrame:self.sleepNowButton];
+    [self setButtonFrame:self.wakeUpAtButton];
+    
+}
+
+- (void)setButtonFrame:(UIButton *)button{
+    button.layer.cornerRadius = 15;
+    button.layer.borderWidth = 2;
+    button.layer.borderColor = [UIColor colorWithRed:167/255.0f green:170/255.0f blue:169/255.0f alpha:1.0f].CGColor;
 }
 
 

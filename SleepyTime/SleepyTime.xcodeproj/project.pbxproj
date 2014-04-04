@@ -11,6 +11,11 @@
 		6564A2BB18EB1C7A004038FF /* STCustomTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A2BA18EB1C7A004038FF /* STCustomTVC.m */; };
 		6564A2BE18EB1E9D004038FF /* STTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A2BD18EB1E9D004038FF /* STTimeModel.m */; };
 		6564A2C518EB8072004038FF /* STTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A2C418EB8072004038FF /* STTimeCell.m */; };
+		658C9B2A18EF644400CE7227 /* PT-Sans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658C9B2618EF644400CE7227 /* PT-Sans-Bold-Italic.ttf */; };
+		658C9B2B18EF644400CE7227 /* PT-Sans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658C9B2718EF644400CE7227 /* PT-Sans-Regular.ttf */; };
+		658C9B2C18EF644400CE7227 /* PT-Sans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658C9B2818EF644400CE7227 /* PT-Sans-Italic.ttf */; };
+		658C9B2D18EF644400CE7227 /* PT-Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658C9B2918EF644400CE7227 /* PT-Sans-Bold.ttf */; };
+		658C9B2F18EF668D00CE7227 /* PTSans-Caption.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658C9B2E18EF668D00CE7227 /* PTSans-Caption.ttf */; };
 		65F2022818EAF6CA007D42B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022718EAF6CA007D42B3 /* Foundation.framework */; };
 		65F2022A18EAF6CA007D42B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022918EAF6CA007D42B3 /* CoreGraphics.framework */; };
 		65F2022C18EAF6CA007D42B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022B18EAF6CA007D42B3 /* UIKit.framework */; };
@@ -25,10 +30,6 @@
 		65F2024918EAF6CA007D42B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2022B18EAF6CA007D42B3 /* UIKit.framework */; };
 		65F2025118EAF6CA007D42B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F2024F18EAF6CA007D42B3 /* InfoPlist.strings */; };
 		65F2025318EAF6CA007D42B3 /* SleepyTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F2025218EAF6CA007D42B3 /* SleepyTimeTests.m */; };
-		65FCA98D18EF586500B63B04 /* PTRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98918EF586500B63B04 /* PTRegular.ttf */; };
-		65FCA98E18EF586500B63B04 /* PTRegularBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98A18EF586500B63B04 /* PTRegularBold.ttf */; };
-		65FCA98F18EF586500B63B04 /* PTRegularBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98B18EF586500B63B04 /* PTRegularBoldItalic.ttf */; };
-		65FCA99018EF586500B63B04 /* PTRegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65FCA98C18EF586500B63B04 /* PTRegularItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,11 @@
 		6564A2BD18EB1E9D004038FF /* STTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTimeModel.m; sourceTree = "<group>"; };
 		6564A2C318EB8072004038FF /* STTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTimeCell.h; sourceTree = "<group>"; };
 		6564A2C418EB8072004038FF /* STTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTimeCell.m; sourceTree = "<group>"; };
+		658C9B2618EF644400CE7227 /* PT-Sans-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT-Sans-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		658C9B2718EF644400CE7227 /* PT-Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT-Sans-Regular.ttf"; sourceTree = "<group>"; };
+		658C9B2818EF644400CE7227 /* PT-Sans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT-Sans-Italic.ttf"; sourceTree = "<group>"; };
+		658C9B2918EF644400CE7227 /* PT-Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT-Sans-Bold.ttf"; sourceTree = "<group>"; };
+		658C9B2E18EF668D00CE7227 /* PTSans-Caption.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-Caption.ttf"; sourceTree = "<group>"; };
 		65F2022418EAF6CA007D42B3 /* SleepyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F2022718EAF6CA007D42B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65F2022918EAF6CA007D42B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,10 +75,6 @@
 		65F2024E18EAF6CA007D42B3 /* SleepyTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SleepyTimeTests-Info.plist"; sourceTree = "<group>"; };
 		65F2025018EAF6CA007D42B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65F2025218EAF6CA007D42B3 /* SleepyTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepyTimeTests.m; sourceTree = "<group>"; };
-		65FCA98918EF586500B63B04 /* PTRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegular.ttf; sourceTree = "<group>"; };
-		65FCA98A18EF586500B63B04 /* PTRegularBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegularBold.ttf; sourceTree = "<group>"; };
-		65FCA98B18EF586500B63B04 /* PTRegularBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegularBoldItalic.ttf; sourceTree = "<group>"; };
-		65FCA98C18EF586500B63B04 /* PTRegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTRegularItalic.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,10 +210,11 @@
 		65FCA99118EF586A00B63B04 /* PT Sans */ = {
 			isa = PBXGroup;
 			children = (
-				65FCA98918EF586500B63B04 /* PTRegular.ttf */,
-				65FCA98A18EF586500B63B04 /* PTRegularBold.ttf */,
-				65FCA98B18EF586500B63B04 /* PTRegularBoldItalic.ttf */,
-				65FCA98C18EF586500B63B04 /* PTRegularItalic.ttf */,
+				658C9B2E18EF668D00CE7227 /* PTSans-Caption.ttf */,
+				658C9B2618EF644400CE7227 /* PT-Sans-Bold-Italic.ttf */,
+				658C9B2718EF644400CE7227 /* PT-Sans-Regular.ttf */,
+				658C9B2818EF644400CE7227 /* PT-Sans-Italic.ttf */,
+				658C9B2918EF644400CE7227 /* PT-Sans-Bold.ttf */,
 			);
 			name = "PT Sans";
 			sourceTree = "<group>";
@@ -294,12 +297,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F2024018EAF6CA007D42B3 /* Images.xcassets in Resources */,
-				65FCA98E18EF586500B63B04 /* PTRegularBold.ttf in Resources */,
-				65FCA98F18EF586500B63B04 /* PTRegularBoldItalic.ttf in Resources */,
+				658C9B2B18EF644400CE7227 /* PT-Sans-Regular.ttf in Resources */,
+				658C9B2F18EF668D00CE7227 /* PTSans-Caption.ttf in Resources */,
 				65F2023218EAF6CA007D42B3 /* InfoPlist.strings in Resources */,
+				658C9B2D18EF644400CE7227 /* PT-Sans-Bold.ttf in Resources */,
+				658C9B2C18EF644400CE7227 /* PT-Sans-Italic.ttf in Resources */,
+				658C9B2A18EF644400CE7227 /* PT-Sans-Bold-Italic.ttf in Resources */,
 				65F2023B18EAF6CA007D42B3 /* Main.storyboard in Resources */,
-				65FCA98D18EF586500B63B04 /* PTRegular.ttf in Resources */,
-				65FCA99018EF586500B63B04 /* PTRegularItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
