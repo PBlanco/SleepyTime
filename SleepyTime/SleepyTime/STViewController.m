@@ -19,6 +19,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *wakeUpAtButton;
 @property (nonatomic, strong)STTimeController *timeController;
 - (void)setButtonFrame:(UIButton *)button;
+- (IBAction)wakeupAtButtonPressed:(UIButton *)sender;
+- (IBAction)cancelButtonPressed:(UIButton *)sender;
+
+//Picker View Stuff
+@property (weak, nonatomic) IBOutlet UIView *pickerViewContainer;
+@property (weak, nonatomic) IBOutlet UIButton *continueButton;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
 @end
 
 @implementation STViewController
@@ -38,10 +47,17 @@
     
      [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    //TESTING
-    [self.timeController getSleepTimesFor:[NSDate date]];
+    [self setupDatePicker];
 
     
+}
+-(void)setupDatePicker
+{
+    [self.datePicker setDatePickerMode:UIDatePickerModeTime];
+    [self setButtonFrame:self.cancelButton];
+    [self setButtonFrame:self.continueButton];
+    [self.pickerViewContainer setHidden:YES];
+
 }
 
 
@@ -52,6 +68,24 @@
     
 }
 
+- (IBAction)wakeupAtButtonPressed:(UIButton *)sender {
+    self.datePicker.date = [NSDate date];
+    self.pickerViewContainer.alpha  = 0;
+    [UIView animateWithDuration:.4 animations:^{
+        [self.pickerViewContainer setHidden:NO];
+        self.pickerViewContainer.alpha  = 1;
+    } completion:^(BOOL finished) { /*Add if needed*/ }];
+}
+
+- (IBAction)cancelButtonPressed:(UIButton *)sender {
+    self.pickerViewContainer.alpha  = 1;
+    [UIView animateWithDuration:.4 animations:^{
+        self.pickerViewContainer.alpha  = 0;
+    } completion:^(BOOL finished) {
+        [self.pickerViewContainer setHidden:YES];
+    }];
+}
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -59,10 +93,12 @@
         STCustomTVC *destViewController = segue.destinationViewController;
         [destViewController.navigationController setNavigationBarHidden:NO];
         destViewController.timesArray = [self.timeController getWakeupTimesFor:[NSDate date]];
-    } else if ([segue.identifier isEqualToString:@"sleepAt"]) {
+    }
+    else if ([segue.identifier isEqualToString:@"sleepAt"]) {
         STCustomTVC *destViewController = segue.destinationViewController;
         [destViewController.navigationController setNavigationBarHidden:NO];
-        destViewController.timesArray = [self.timeController getSleepTimesFor:[NSDate date]];
+        destViewController.timesArray = [self.timeController getSleepTimesFor:self.datePicker.date];
+        [self.pickerViewContainer setHidden:YES];
     }
 }
 
