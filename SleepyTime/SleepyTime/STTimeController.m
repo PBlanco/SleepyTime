@@ -21,10 +21,27 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
 
 - (NSArray *)getWakeupTimesFor:(NSDate *)date
 {
+    NSTimeInterval startTimeInterval = (ONESLEEPCYLCETIME + FALLASLEEPTIME);
+    NSTimeInterval oneSleepCylceTime = ONESLEEPCYLCETIME;
+    
+    return [self getTimesFor:date withStartingTimeInterval:startTimeInterval andWithSleepCylceTime:oneSleepCylceTime];
+}
+
+- (NSArray *)getSleepTimesFor:(NSDate *)date
+{
+    //negative values becuase we have a later time and are counting backwards
+    NSTimeInterval startTimeInterval = -(ONESLEEPCYLCETIME + FALLASLEEPTIME);
+    NSTimeInterval oneSleepCylceTime = -ONESLEEPCYLCETIME;
+    
+    return [self getTimesFor:date withStartingTimeInterval:startTimeInterval andWithSleepCylceTime:oneSleepCylceTime];
+}
+
+//Helper method for figure out times
+-(NSArray *)getTimesFor:(NSDate *)date withStartingTimeInterval:(NSTimeInterval)startingTimeInterval andWithSleepCylceTime:(NSTimeInterval)sleepCylceTime
+{
     NSMutableArray *timesArray = [[NSMutableArray alloc]init];
     
     //Add initial time
-    NSTimeInterval startingTimeInterval = ONESLEEPCYLCETIME + FALLASLEEPTIME;
     NSDate *startTimeDate = [date dateByAddingTimeInterval:startingTimeInterval];
     
     //Create temp strings
@@ -36,9 +53,10 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
     
     //add the rest of the times
     NSDate *tempDate = startTimeDate;
+    
     for (int i = 1; i <6; i++) {
         //increment date by 90 mins
-        tempDate = [tempDate dateByAddingTimeInterval:ONESLEEPCYLCETIME];
+        tempDate = [tempDate dateByAddingTimeInterval:sleepCylceTime];
         
         NSString *tmpTime = [self getStringForTime:tempDate];
         NSString *tmpHours = [self getStringHourForStartTime:date toEndtime:tempDate];
@@ -47,13 +65,7 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
         [timesArray addObject:tmpTimeModel];
     }
     return [NSArray arrayWithArray:timesArray];
-}
 
-- (NSArray *)getSleepTimesFor:(NSDate *)date
-{
-//TODO: Implement me!
-  
-    return [[NSArray alloc]init];
 }
 
 //Helper methods
@@ -78,7 +90,7 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
     double minutesLeftBetweenDates = hoursDoubleBetweenDates - hoursBetweenDates;
     NSInteger minutes = minutesLeftBetweenDates*minutesInAnHour;
     
-    return [NSString stringWithFormat:@"%i%@ %i%@",hoursBetweenDates,@"h",minutes, @"m"];
+    return [NSString stringWithFormat:@"%i%@ %i%@",abs(hoursBetweenDates),@"h",abs(minutes), @"m"];
 }
 
 

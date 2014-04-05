@@ -37,6 +37,9 @@
     [self setButtonFrame:self.wakeUpAtButton];
     
      [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    //TESTING
+    [self.timeController getSleepTimesFor:[NSDate date]];
 
     
 }
@@ -56,6 +59,10 @@
         STCustomTVC *destViewController = segue.destinationViewController;
         [destViewController.navigationController setNavigationBarHidden:NO];
         destViewController.timesArray = [self.timeController getWakeupTimesFor:[NSDate date]];
+    } else if ([segue.identifier isEqualToString:@"sleepAt"]) {
+        STCustomTVC *destViewController = segue.destinationViewController;
+        [destViewController.navigationController setNavigationBarHidden:NO];
+        destViewController.timesArray = [self.timeController getSleepTimesFor:[NSDate date]];
     }
 }
 
