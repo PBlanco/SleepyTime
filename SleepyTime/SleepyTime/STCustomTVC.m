@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *header1;
 @property (weak, nonatomic) IBOutlet UILabel *header2;
 
+- (IBAction)cancelButtonPressed:(UIButton *)sender;
 
 @end
 
@@ -82,6 +83,7 @@
     return cell;
 }
 
-
-
+- (IBAction)cancelButtonPressed:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

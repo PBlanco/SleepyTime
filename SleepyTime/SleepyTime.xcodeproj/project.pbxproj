@@ -104,6 +104,10 @@
 		6564A2BF18EB1EB1004038FF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				65F2023C18EAF6CA007D42B3 /* STViewController.h */,
+				65F2023D18EAF6CA007D42B3 /* STViewController.m */,
+				6564A2B918EB1C7A004038FF /* STCustomTVC.h */,
+				6564A2BA18EB1C7A004038FF /* STCustomTVC.m */,
 				6564A2B618EB13E9004038FF /* STTimeController.h */,
 				6564A2B718EB13E9004038FF /* STTimeController.m */,
 			);
@@ -114,10 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				65F2023918EAF6CA007D42B3 /* Main.storyboard */,
-				65F2023C18EAF6CA007D42B3 /* STViewController.h */,
-				65F2023D18EAF6CA007D42B3 /* STViewController.m */,
-				6564A2B918EB1C7A004038FF /* STCustomTVC.h */,
-				6564A2BA18EB1C7A004038FF /* STCustomTVC.m */,
 				6564A2C318EB8072004038FF /* STTimeCell.h */,
 				6564A2C418EB8072004038FF /* STTimeCell.m */,
 			);

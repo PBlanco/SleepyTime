@@ -46,7 +46,6 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
         STTimeModel *tmpTimeModel = [[STTimeModel alloc] initWithTime:tmpTime andHoursOfSleep:tmpHours];
         [timesArray addObject:tmpTimeModel];
     }
-    NSLog(@"Dates: \n %@", timesArray);
     return [NSArray arrayWithArray:timesArray];
 }
 
@@ -61,7 +60,7 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
 -(NSString *)getStringForTime:(NSDate *)date
 {
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-    [timeFormatter setDateFormat:@"hh:mm a"];
+    [timeFormatter setDateFormat:@"h:mm a"];
     NSString *time = [timeFormatter stringFromDate:date];
     return time;
 }
