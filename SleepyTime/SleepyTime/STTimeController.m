@@ -30,7 +30,8 @@ NSTimeInterval FALLASLEEPTIME = 60*14;
 - (NSArray *)getSleepTimesFor:(NSDate *)date
 {
     //negative values becuase we have a later time and are counting backwards
-    NSTimeInterval startTimeInterval = -(ONESLEEPCYLCETIME + FALLASLEEPTIME);
+//    Duhhh you don't need the 14+ mins start time!! so the intervals the same... Bug crushed
+    NSTimeInterval startTimeInterval = -(ONESLEEPCYLCETIME);
     NSTimeInterval oneSleepCylceTime = -ONESLEEPCYLCETIME;
     
     return [self getTimesFor:date withStartingTimeInterval:startTimeInterval andWithSleepCylceTime:oneSleepCylceTime];

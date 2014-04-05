@@ -53,7 +53,8 @@
     
     [self.header1 setTextColor:[UIColor whiteColor]];
     [self.header2 setTextColor:[UIColor whiteColor]];
-
+    
+//TODO: Customize Header for wakeup at
 
 }
 
