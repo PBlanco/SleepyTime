@@ -113,6 +113,7 @@
 		6564A2C118EB1EC0004038FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65F2023918EAF6CA007D42B3 /* Main.storyboard */,
 				65F2023C18EAF6CA007D42B3 /* STViewController.h */,
 				65F2023D18EAF6CA007D42B3 /* STViewController.m */,
 				6564A2B918EB1C7A004038FF /* STCustomTVC.h */,
@@ -165,7 +166,6 @@
 		65F2022D18EAF6CA007D42B3 /* SleepyTime */ = {
 			isa = PBXGroup;
 			children = (
-				65F2023918EAF6CA007D42B3 /* Main.storyboard */,
 				6564A2C218EB1EC9004038FF /* Models */,
 				6564A2C118EB1EC0004038FF /* Views */,
 				6564A2BF18EB1EB1004038FF /* Controllers */,

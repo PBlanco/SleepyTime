@@ -10,22 +10,28 @@
 
 @implementation STTimeCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+-(id)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        // Initialization code
+        
     }
     return self;
 }
 
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    [self.timeLabel setFont:[UIFont fontWithName:@"PTSans-Bold" size:32]];
+    [self.hoursLabel setFont:[UIFont fontWithName:@"PT Sans" size:20]];
+}
 
 
 
 -(void)colorForIndex:(NSInteger) index {
     float val = ((float)index / (float)4) * 0.9;
-     UIColor *textcolor = [UIColor colorWithRed:132/255.0f green:val blue: 0.0 alpha:1.0];
-    self.timeLabel.textColor = textcolor;
+     UIColor *textcolor = [UIColor colorWithRed:200/255.0f green:val blue: 0.0 alpha:1.0];
+    self.hoursLabel.textColor = textcolor;
+    
 }
 
 

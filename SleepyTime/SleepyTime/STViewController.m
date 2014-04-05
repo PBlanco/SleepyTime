@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self.navigationController setNavigationBarHidden:YES];
     self.timeController = [[STTimeController alloc]init];
     
     //Set custom font
@@ -37,12 +36,17 @@
     [self setButtonFrame:self.sleepNowButton];
     [self setButtonFrame:self.wakeUpAtButton];
     
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    
 }
+
 
 - (void)setButtonFrame:(UIButton *)button{
     button.layer.cornerRadius = 15;
     button.layer.borderWidth = 2;
     button.layer.borderColor = [UIColor colorWithRed:167/255.0f green:170/255.0f blue:169/255.0f alpha:1.0f].CGColor;
+    
 }
 
 
